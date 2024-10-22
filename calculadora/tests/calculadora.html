@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script>
+        function sumar() {
+            var valor1 = parseFloat(document.getElementById('valor1').value);
+            var valor2 = parseFloat(document.getElementById('valor2').value);
+            var resultado = valor1 + valor2;
+            document.getElementById('resultado').innerText = resultado.toString();
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="text" id="valor1" />
+    <input type="text" id="valor2" />
+    <button id="sumar" onclick="sumar()">Sumar</button>
+    <p id="resultado"></p>
+</body>
+</html>
